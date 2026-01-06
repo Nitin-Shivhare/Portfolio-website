@@ -1,16 +1,56 @@
-# React + Vite
+# Nitin Shivhare – Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A retro **Windows 98–styled portfolio website** built using **React**.  
+Designed to feel nostalgic while showcasing modern frontend development practices.
 
-Currently, two official plugins are available:
+🌐 **Live Website:** https://www.nitinshivhare.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🪟 Windows 98–inspired UI (desktop, windows, taskbar aesthetics)
+- ⚛️ Built with React for component-based architecture
+- 🎨 Custom CSS for retro styling (no UI frameworks)
+- 🧠 Modular and scalable frontend structure
+- 🚀 Optimized build using Vite
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- **Frontend:** React
+- **Build Tool:** Vite
+- **Styling:** CSS (custom, retro-focused)
+- **Language:** JavaScript (ES6+)
+
+---
+
+## 📂 Repository Purpose
+
+This repository contains **only the frontend** of the portfolio website.  
+Any backend services, APIs, or integrations (if used) are maintained separately.
+
+---
+
+## 🧑‍💻 Local Development
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Nitin-Shivhare/Portfolio-website.git
+cd Portfolio-website
+```
+
+---
+
+## 📸Design Inspiration
+
+Inspired by classic Windows 98 UI, aiming to blend nostalgia with modern web technologies.
+
+---
+
+## 📬 Contact
+
+Website:https://www.nitinshivhare.com/
+Github:https://github.com/Nitin-Shivhare
