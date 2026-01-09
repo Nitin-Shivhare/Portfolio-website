@@ -1,3 +1,49 @@
+/* ===============================
+   Windows 95 / 98 System Font
+   =============================== */
+@font-face {
+	font-family: "W95 Sans Serif";
+	src: url("./assets/fonts/w-95-sans-serif.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ===============================
+   Orbitron Black (Headings)
+   =============================== */
+@font-face {
+	font-family: "Orbitron";
+	src: url("./assets/fonts/Orbitron-Black.woff2") format("woff2"),
+		url("./assets/fonts/Orbitron-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ===============================
+   Visual Bold (UI Accents)
+   =============================== */
+@font-face {
+	font-family: "Visual";
+	src: url("./assets/fonts/Visual-Bold.woff2") format("woff2"),
+		url("./assets/fonts/Visual-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ===============================
+   Pixel Sans (UI Accents)
+   =============================== */
+@font-face {
+	font-family: "Pixelify Sans";
+	src: url("./assets/fonts/PixelifySans-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
 * {
 	border-radius: 0 !important;
 }
@@ -8,14 +54,67 @@
 }
 
 body {
-	font-family: Tahoma, Verdana, Arial, sans-serif;
-	font-size: 12px;
-}
-
-body {
-	cursor: url("/src/assets/cursor/cursor.cur"), auto;
+	cursor: url("./assets/cursor/cursor.cur"), auto;
 }
 
 button {
-	cursor: url("/src/assets/cursor/pointer.cur"), pointer;
+	cursor: url("./assets/cursor/pointer.cur"), pointer;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: #008080; /* sacred Win98 teal */
+	font-family: "W95 Sans Serif", Tahoma, sans-serif;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Pixel noise layer */
+body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+
+	background-image: repeating-linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.04),
+			rgba(255, 255, 255, 0.04) 1px,
+			transparent 1px,
+			transparent 2px
+		),
+		repeating-linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.04),
+			rgba(0, 0, 0, 0.04) 1px,
+			transparent 1px,
+			transparent 2px
+		);
+
+	opacity: 0.35;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+:root {
+	font-family: "MS Sans Serif", Tahoma, Arial, sans-serif;
+	font-size: 12px;
+
+	/* Windows 98 Color Palette */
+	--bg-window: #c0c0c0;
+	--bg-sidebar: #7c7c7c;
+	--border-light: #ffffff;
+	--border-dark: #808080;
+	--border-black: #000000;
+	--highlight-blue: #000080;
+	--highlight-text: #ffffff;
 }
