@@ -1,0 +1,45 @@
+.project-image-frame {
+	margin: 20px 0;
+	padding: 6px;
+	background: #c0c0c0;
+
+	border: 2px solid;
+	border-color: #404040 #dfdfdf #dfdfdf #404040;
+
+	box-sizing: border-box;
+}
+
+/* Actual image */
+.projects-image {
+	display: block;
+	width: 100%;
+	max-width: 900px; /* 🔑 prevents over-wide screenshots */
+	height: auto;
+
+	margin: 0 auto; /* center horizontally */
+
+	border: 2px solid;
+	border-color: #dfdfdf #404040 #404040 #dfdfdf;
+
+	background: #ffffff;
+
+	image-rendering: auto;
+}
+
+.projects-h-link {
+	color: var(--highlight-blue);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1px;
+	letter-spacing: 1px;
+}
+
+.links-container a {
+	font-family: "W95 Sans Serif";
+	color: var(--highlight-blue);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1px;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
