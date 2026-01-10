@@ -1,0 +1,102 @@
+/* === WINDOW SHELL === */
+.app-window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 90vw;
+	max-width: 1200px;
+	height: 80vh;
+
+	display: flex;
+	flex-direction: column;
+
+	background: var(--bg-window);
+	z-index: 500;
+}
+
+/* === BODY === */
+.app-body {
+	flex: 1;
+	padding: 0;
+	overflow: hidden;
+	background: #fff;
+}
+
+/* === MAIN LAYOUT === */
+.app-layout {
+	display: grid;
+	grid-template-columns: 180px 1fr;
+	height: 100%;
+}
+
+/* === SIDEBAR === */
+.app-sidebar {
+	padding: 12px;
+	border-right: 2px solid var(--border-dark);
+	background: #fff;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.app-sidebar a {
+	color: #0000ee;
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.app-sidebar a.active {
+	color: #551a8b;
+}
+
+/* === CONTENT === */
+.app-content {
+	padding: 20px;
+	overflow-y: auto;
+	line-height: 1.5;
+}
+
+.app-content h1 {
+	font-size: 36px;
+	margin: 0 0 4px;
+	font-family: "Times New Roman", serif;
+}
+
+.app-content h2 {
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+.app-content hr {
+	margin: 20px 0;
+	border: none;
+	border-top: 2px solid #000;
+}
+
+/* === RESUME LINK === */
+.resume-link {
+	font-weight: bold;
+}
+
+.resume-link a {
+	color: #0000ee;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* === STATUS BAR === */
+.status-bar {
+	height: 22px;
+	padding: 2px 6px;
+
+	background: #c0c0c0;
+	border-top: 2px solid var(--border-light);
+
+	font-size: 11px;
+	display: flex;
+	align-items: center;
+}
