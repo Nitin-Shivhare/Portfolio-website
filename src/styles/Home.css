@@ -1,0 +1,110 @@
+/* ======================================
+   DESKTOP ICON AREA
+   ====================================== */
+
+.icon-container {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+
+	width: 100%;
+	height: calc(100vh - 40px); /* taskbar height */
+
+	padding: 12px;
+	gap: 32px;
+
+	box-sizing: border-box;
+}
+
+/* ======================================
+   INDIVIDUAL ICON
+   ====================================== */
+
+.individual-icon {
+	width: 72px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+
+	cursor: default;
+	user-select: none;
+}
+
+/* Prevent modern hover junk */
+.individual-icon * {
+	pointer-events: none;
+}
+
+/* ======================================
+   ICON IMAGE
+   ====================================== */
+
+.icon-container-icon {
+	width: 48px;
+	height: 48px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-container-icon img {
+	width: 48px;
+	height: 48px;
+
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+}
+
+/* ======================================
+   ICON TEXT (WIN98 STYLE)
+   ====================================== */
+
+.icon-container-text {
+	color: var(--text-titlebar);
+
+	font-size: 12px;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.4px;
+
+	max-width: 72px;
+	padding: 2px 4px;
+
+	word-break: break-word;
+}
+
+/* ======================================
+   SELECTED ICON
+   ====================================== */
+
+.individual-icon.selected .icon-container-text {
+	background-color: #000080;
+	color: #ffffff;
+}
+
+.individual-icon.selected img {
+	filter: brightness(0.9);
+}
+
+/* ======================================
+   SUBTLE HOVER (OPTIONAL)
+   ====================================== */
+
+.individual-icon:hover .icon-container-text {
+	background-color: rgba(0, 0, 128, 0.15);
+}
+
+/* ======================================
+   GLOBAL RETRO SHARPENING
+   ====================================== */
+
+* {
+	-webkit-font-smoothing: none;
+	font-smooth: never;
+}
