@@ -8,7 +8,7 @@ import ShowcaseContentContact from "./ShowcaseContentContact"
 import ShowcaseContentProjects from "./ShowcaseContentProjects"
 
 function ShowcaseApp({ setIsShowcase }) {
-	const [showcaseAppState, setShowcaseAppState] = useState("about")
+	const [showcaseAppState, setShowcaseAppState] = useState("home")
 
 	return (
 		<div>
