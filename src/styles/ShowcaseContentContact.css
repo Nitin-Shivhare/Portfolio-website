@@ -1,0 +1,80 @@
+.contact {
+	font-family: "W95 Sans Serif", sans-serif;
+}
+
+/* Heading */
+.contact h1 {
+	font-family: "Orbitron", sans-serif;
+	font-weight: 900;
+	font-size: 52px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+/* Intro text */
+.contact-intro {
+	font-family: "Millennium Regular", serif;
+	font-size: 16px;
+	line-height: 1.5;
+	max-width: 620px;
+	margin-bottom: 18px;
+}
+
+/* Email line */
+.contact-email {
+	font-family: "Visual", sans-serif;
+	font-size: 15px;
+	margin-bottom: 26px;
+}
+
+.contact-email a {
+	color: blue;
+	text-decoration: underline;
+}
+
+/* Form container */
+.contact-form {
+	max-width: 620px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+/* Labels */
+.contact-form label {
+	font-family: "Visual", sans-serif;
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Label text */
+.contact-form span {
+	margin-bottom: 4px;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+	font-family: "W95 Sans Serif", sans-serif;
+	font-size: 14px;
+	padding: 6px;
+	border: 2px inset #c0c0c0;
+	background: #ffffff;
+	color: #000;
+}
+
+/* Button */
+.contact-form button {
+	font-family: "Visual", sans-serif;
+	font-size: 14px;
+	padding: 6px 18px;
+	margin-top: 8px;
+	background: #c0c0c0;
+	border: 2px outset #ffffff;
+	cursor: pointer;
+}
+
+.contact-form button:active {
+	border: 2px inset #ffffff;
+}
