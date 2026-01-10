@@ -1,6 +1,12 @@
-import { useState } from "react"
+import { createContext, useState } from "react"
 import HomePage from "../page/HomePage"
 import Taskbar from "./Taskbar"
+
+export const IconContext = createContext({
+	applications: [],
+
+	setApplications: () => {},
+})
 
 function AppLayout() {
 	const [applications, setApplications] = useState([
