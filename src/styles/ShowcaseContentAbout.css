@@ -1,0 +1,39 @@
+.showcase-layout {
+	display: flex;
+	height: 100%; /* MUST be constrained */
+	width: 100%;
+}
+
+/* Left: fixed, never scrolls */
+.left-panel {
+	width: 220px; /* classic Win98 sidebar energy */
+	flex-shrink: 0;
+	padding: 16px;
+	position: sticky;
+}
+
+/* Right: scrollable */
+.right-panel {
+	flex: 1;
+	overflow-y: visible;
+	background: #ffffff;
+	padding: 16px;
+}
+
+.right-panel h1 {
+	font-family: "Orbitron";
+	font-size: 50px;
+	margin-top: 2px;
+}
+
+.right-panel h3 {
+	font-family: "Millennium Regular";
+	margin: auto;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+.right-panel p {
+	font-family: "Millennium Regular";
+	font-size: 18px;
+}
