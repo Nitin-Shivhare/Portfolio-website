@@ -1,0 +1,34 @@
+/* RESUME CALL OUT */
+
+.resume-callout {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 10px 0;
+	font-family: "MS Sans Serif", sans-serif;
+}
+
+.resume-icon {
+	width: 32px;
+	height: 32px;
+	image-rendering: pixelated;
+}
+
+.resume-text h4 {
+	font-family: "Millennium Regular";
+	margin: 0;
+	font-size: 24px;
+	/* font-weight: bold; */
+}
+
+.resume-text a {
+	font-family: "W95 Sans Serif";
+	font-size: 14px;
+	color: #0000ee;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.resume-text a:visited {
+	color: #551a8b;
+}
