@@ -1,0 +1,72 @@
+.outer-box {
+	height: 100%;
+	width: 100%;
+	margin: 50px auto;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+.outer-box h1 {
+	color: var(--highlight-blue);
+	position: relative;
+	font-family: "Orbitron", serif;
+	font-optical-sizing: auto;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 83px;
+	letter-spacing: -1px;
+	line-height: 20px;
+}
+
+.outer-box h3 {
+	font-family: "Pixelify Sans", serif;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+	font-size: 39px;
+	margin-top: auto;
+	margin-bottom: 20px;
+}
+
+.third {
+	width: 100%;
+	font-family: "W95 Sans Serif";
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 36px;
+	cursor: pointer;
+}
+
+.third h4 {
+	color: var(--highlight-blue);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1px;
+	font-size: 13px;
+}
+
+.clickable h4 {
+	cursor: pointer;
+	user-select: none;
+	padding: 4px 6px;
+}
+
+.clickable h4:hover {
+	background-color: #c0c0c0; /* classic Win98 gray */
+	border: 1px solid #808080;
+	border-top-color: #ffffff;
+	border-left-color: #ffffff;
+}
+
+.clickable h4:active {
+	border-top-color: #808080;
+	border-left-color: #808080;
+	border-bottom-color: #ffffff;
+	border-right-color: #ffffff;
+	transform: translate(1px, 1px);
+}
