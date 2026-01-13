@@ -65,7 +65,7 @@ function Taskbar() {
 					</button>
 				</div>
 
-				<div className="icon-tray">item 2</div>
+				<div className="icon-tray"></div>
 
 				<div className="SoundnTime">
 					<div className="task-bar-right-sound center">
