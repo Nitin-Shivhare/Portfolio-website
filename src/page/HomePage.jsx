@@ -1,7 +1,7 @@
 import "../styles/Home.css"
 import ShowcaseIcon from "../assets/icons/showcase.png"
 import ResumeIcon from "../assets/icons/resume.png"
-import ResumePDF from "../assets/resume/Nitin_Shivhare_Resume_2026.pdf"
+import ResumePDF from "../../public/resume/Nitin_Shivhare_Resume_2026.pdf"
 import ShowcaseApp from "../component/ShowcaseApp"
 import { useState } from "react"
 
