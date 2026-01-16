@@ -9,7 +9,7 @@ function ResumeCallOut() {
 			<div className="resume-text">
 				<h4>Looking for my resume?</h4>
 				<a
-					href="/public/resume/Nitin_Shivhare_Resume_2026.pdf"
+					href="/resume/Nitin_Shivhare_Resume_2026.pdf"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
