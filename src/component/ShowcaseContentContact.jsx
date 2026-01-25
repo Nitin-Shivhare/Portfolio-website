@@ -11,7 +11,7 @@ function ShowcaseContentContact({ setShowcaseAppState }) {
 				import.meta.env.VITE_EMAILJS_SERVICE_ID, // ✅ your Service ID
 				import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // ✅ paste Template ID
 				e.target,
-				import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+				import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
 				// ✅ paste Public Key
 			)
 			.then(
@@ -22,7 +22,7 @@ function ShowcaseContentContact({ setShowcaseAppState }) {
 				(error) => {
 					alert("Failed to send message.")
 					console.error(error)
-				}
+				},
 			)
 	}
 
@@ -86,6 +86,9 @@ function ShowcaseContentContact({ setShowcaseAppState }) {
 					</label>
 
 					<button type="submit">Send</button>
+					<br />
+					<br />
+					<br />
 				</form>
 			</div>
 		</div>
