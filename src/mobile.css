@@ -1,0 +1,238 @@
+/* =====================================
+   MOBILE OVERRIDES ONLY
+   Target: <= 768px
+   Desktop styles remain sacred
+   ===================================== */
+
+@media (max-width: 768px) {
+	/* -----------------------------
+     ROOT + SCROLL BEHAVIOR
+     ----------------------------- */
+
+	html,
+	body {
+		overflow-y: auto;
+		overflow-x: hidden;
+		height: auto;
+	}
+
+	/* Reduce CRT noise for performance */
+	body::before {
+		opacity: 0.15;
+	}
+
+	/* -----------------------------
+     APP CONTAINER
+     ----------------------------- */
+
+	.App {
+		height: auto;
+		min-height: 100vh;
+		overflow: hidden;
+	}
+
+	/* -----------------------------
+     DESKTOP ICONS = GONE
+     ----------------------------- */
+
+	/* .icon-container {
+		display: none;
+	} */
+
+	/* -----------------------------
+     RETRO WINDOW (CRITICAL)
+     ----------------------------- */
+
+	.window {
+		position: fixed;
+		top: 0;
+		left: 0;
+		transform: none;
+
+		width: 100vw;
+		height: calc(100vh - 36px); /* taskbar */
+
+		min-width: unset;
+		min-height: unset;
+
+		resize: none;
+		border-width: 2px;
+	}
+
+	.window.maximized {
+		width: 100vw;
+		height: calc(100vh - 36px);
+	}
+
+	/* -----------------------------
+     TITLE BAR (TOUCH FRIENDLY)
+     ----------------------------- */
+
+	.title-bar {
+		height: 28px;
+		padding: 4px;
+		cursor: default;
+	}
+
+	.title-bar-controls button {
+		width: 22px;
+		height: 20px;
+	}
+
+	/* -----------------------------
+     WINDOW BODY
+     ----------------------------- */
+
+	.window-body {
+		padding: 12px;
+		overflow-y: auto;
+	}
+
+	/* -----------------------------
+     SHOWCASE APP LAYOUT
+     ----------------------------- */
+
+	.app-window {
+		position: fixed;
+		top: 0;
+		left: 0;
+		transform: none;
+
+		width: 100vw;
+		height: calc(100vh - 36px);
+		max-width: none;
+		max-height: none;
+	}
+
+	.app-layout {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.app-sidebar {
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 12px;
+
+		border-right: none;
+		border-bottom: 2px solid var(--border-dark);
+	}
+
+	.app-content {
+		padding: 16px;
+	}
+
+	/* -----------------------------
+     SHOWCASE ABOUT PAGE
+     ----------------------------- */
+
+	.showcase-layout {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.left-panel {
+		width: 100%;
+		position: relative;
+		padding: 12px;
+	}
+
+	.right-panel {
+		padding: 14px;
+	}
+
+	/* -----------------------------
+     TYPOGRAPHY SCALING
+     ----------------------------- */
+
+	h1 {
+		font-size: 32px !important;
+		line-height: 1.2;
+	}
+
+	h2 {
+		font-size: 20px !important;
+	}
+
+	h3 {
+		font-size: 18px !important;
+	}
+
+	p {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+
+	/* Home page hero text */
+	.outer-box h1 {
+		font-size: 36px;
+		line-height: 1.1;
+		text-align: center;
+	}
+
+	.outer-box h3 {
+		font-size: 18px;
+	}
+
+	.outer-box .third {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* -----------------------------
+     PROJECT IMAGES
+     ----------------------------- */
+
+	.projects-image {
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* -----------------------------
+     CONTACT PAGE
+     ----------------------------- */
+
+	.contact h1 {
+		font-size: 32px;
+	}
+
+	.contact-form {
+		max-width: 100%;
+	}
+
+	/* -----------------------------
+     RESUME CALLOUT
+     ----------------------------- */
+
+	.resume-callout {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
+	}
+
+	.resume-text h4 {
+		font-size: 18px;
+	}
+
+	/* -----------------------------
+     TASKBAR (SLIGHTLY BIGGER)
+     ----------------------------- */
+
+	.task-bar {
+		height: 36px;
+		font-size: 13px;
+	}
+
+	.start-btn {
+		height: 30px;
+		padding: 0 10px;
+	}
+
+	.SoundnTime {
+		height: 28px;
+	}
+}
