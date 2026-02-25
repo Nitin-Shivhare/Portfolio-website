@@ -3,6 +3,10 @@ import ShowcaseNavigation from "./ShowcaseNavigation"
 import ResumeCallOut from "./ResumeCallOut"
 
 function ShowcaseContentAbout({ setShowcaseAppState }) {
+	const handleThisFormAnchor = function () {
+		setShowcaseAppState("contact")
+	}
+
 	return (
 		<div className="showcase-layout">
 			<div className="left-panel">
@@ -17,7 +21,7 @@ function ShowcaseContentAbout({ setShowcaseAppState }) {
 				<p>
 					I'm a full stack MERN developer, currently seeking entry-level
 					opportunities where I can continue learning, grow as a developer, and
-					contribute to meaningful projects in a professional environment.I
+					contribute to meaningful projects in a professional environment. I
 					graduated in December 2025 with a Bachelor of Computer Applications
 					(BCA) from Rabindranath Tagore University, Bhopal.
 				</p>
@@ -25,8 +29,20 @@ function ShowcaseContentAbout({ setShowcaseAppState }) {
 				<p>
 					Thank you for taking the time to check out my portfolio. I really hope
 					you enjoy exploring it as much as I enjoyed building it. If you have
-					any questions or comments, feel free to contact me using this form or
-					shoot me an email at nitin.alt99@gmail.com
+					any questions or comments, feel free to contact me using{" "}
+					<a
+						style={{
+							color: "blue",
+							textDecoration: "underLine",
+							cursor: "pointer",
+							userSelect: "none",
+							padding: "4px 6px",
+						}}
+						onClick={handleThisFormAnchor}
+					>
+						this form
+					</a>{" "}
+					or shoot me an email at nitin.alt99@gmail.com
 				</p>
 
 				{/* RESUME CALL--OUT */}
