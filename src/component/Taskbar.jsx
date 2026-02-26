@@ -17,39 +17,39 @@ function Taskbar() {
 	return (
 		<>
 			{isStartMenu ? (
-				<div class="start-menu shadow-depth">
-					<aside class="start-menu-sidebar">
-						<h4 class="sidebar-title">ShivhareOS</h4>
+				<div className="start-menu shadow-depth">
+					<aside className="start-menu-sidebar">
+						<h4 className="sidebar-title">ShivhareOS</h4>
 					</aside>
 
-					<nav class="start-menu-main">
-						<div class="menu-item">
-							<div class="menu-icon">
+					<nav className="start-menu-main">
+						<div className="menu-item">
+							<div className="menu-icon">
 								<img src={ShutdownIcon} alt="Shutdown" />
 							</div>
-							<span class="menu-text">Shut down...</span>
+							<span className="menu-text">Shut down...</span>
 						</div>
 
 						<a
 							href="https://www.linkedin.com/in/nitin-shivhare-3911b0345/"
-							class="menu-item"
+							className="menu-item"
 							target="_blank"
 						>
-							<div class="menu-icon">
+							<div className="menu-icon">
 								<img src={LinkedinIcon} alt="LinkedIn" />
 							</div>
-							<span class="menu-text">Linkedin</span>
+							<span className="menu-text">Linkedin</span>
 						</a>
 
 						<a
 							href="https://github.com/Nitin-Shivhare"
-							class="menu-item"
+							className="menu-item"
 							target="_blank"
 						>
-							<div class="menu-icon">
+							<div className="menu-icon">
 								<img src={GithubIcon} alt="Github" />
 							</div>
-							<span class="menu-text">Github</span>
+							<span className="menu-text">Github</span>
 						</a>
 					</nav>
 				</div>
