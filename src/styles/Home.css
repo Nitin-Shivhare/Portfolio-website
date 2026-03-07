@@ -66,7 +66,7 @@
    ====================================== */
 
 .icon-container-text {
-	color: var(--text-titlebar);
+	color: var(--highlight-text);
 
 	font-size: 12px;
 	line-height: 1.2;
@@ -76,7 +76,7 @@
 	max-width: 72px;
 	padding: 2px 4px;
 
-	word-break: break-word;
+	word-break: normal;
 }
 
 /* ======================================
