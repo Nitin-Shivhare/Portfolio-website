@@ -17,6 +17,7 @@
 	min-height: 300px;
 
 	resize: both;
+	will-change: transform;
 
 	display: flex;
 	flex-direction: column;
@@ -150,7 +151,7 @@
 	transform: none;
 
 	width: 100vw;
-	height: 100vh;
+	height: calc(100vh - 36px); /* stopoing above the taskbar */
 
 	min-width: unset;
 	min-height: unset;
