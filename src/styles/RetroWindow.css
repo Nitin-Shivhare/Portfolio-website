@@ -275,3 +275,10 @@
 		inset 1px 1px 0 #808080,
 		inset -1px -1px 0 #dfdfdf;
 }
+
+/* PONG */
+
+.window-body:has(.pong-wrapper) {
+	padding: 0;
+	overflow: hidden;
+}
