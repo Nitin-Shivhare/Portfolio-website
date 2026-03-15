@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { Analytics } from "@vercel/analytics/next"
 import "./App.css"
 import AppLayout from "./component/AppLayout"
 import HomePage from "./page/HomePage"
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
 function App() {
 	return (
 		<div className="App">
+			<Analytics />
 			<RouterProvider router={router} />
 		</div>
 	)
