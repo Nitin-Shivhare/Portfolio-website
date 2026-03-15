@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 import "./App.css"
 import AppLayout from "./component/AppLayout"
 import HomePage from "./page/HomePage"
