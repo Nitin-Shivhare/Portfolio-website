@@ -16,8 +16,11 @@ function ShowcaseContentProjects({ setShowcaseAppState }) {
 
 				<hr />
 				<h3 className="clickable ">
-					<a href="https://opensourcewiki.tech/" className="projects-h-link">
-						OpenSourceWiki.tech{" "}
+					<a
+						href="https://open-front-two.vercel.app/"
+						className="projects-h-link"
+					>
+						OpenSourceWiki{" "}
 					</a>
 				</h3>
 
@@ -61,8 +64,8 @@ function ShowcaseContentProjects({ setShowcaseAppState }) {
 					<h3>Links:</h3>
 					<p>
 						Live Link:{"  "}
-						<a href="https://opensourcewiki.tech/">
-							https://opensourcewiki.tech/
+						<a href="https://open-front-two.vercel.app/">
+							https://open-front-two.vercel.app/
 						</a>
 					</p>
 
