@@ -46,10 +46,10 @@ function ShowcaseContentAbout({ setShowcaseAppState }) {
 				</p>
 
 				{/* RESUME CALL--OUT */}
-				<hr />
+				<hr className="retro-divider" />
 				<ResumeCallOut />
 
-				<hr />
+				<hr className="retro-divider" />
 
 				{/* ABOUT ME */}
 				<h3>About me</h3>
@@ -78,7 +78,7 @@ function ShowcaseContentAbout({ setShowcaseAppState }) {
 					aiming to understand not just what works, but why it works.
 				</p>
 
-				<hr />
+				<hr className="retro-divider" />
 
 				{/* My Hobbies */}
 				<h3>My Hobbies</h3>

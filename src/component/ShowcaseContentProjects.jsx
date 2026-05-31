@@ -11,10 +11,10 @@ function ShowcaseContentProjects({ setShowcaseAppState }) {
 			</div>
 			<div className="right-panel">
 				<h1>Projects</h1>
-				<hr />
+				<hr className="retro-divider" />
 				<ResumeCallOut />
 
-				<hr />
+				<hr className="retro-divider" />
 				<h3 className="clickable ">
 					<a
 						href="https://open-front-two.vercel.app/"
@@ -78,7 +78,7 @@ function ShowcaseContentProjects({ setShowcaseAppState }) {
 				</div>
 
 				<br />
-				<hr />
+				<hr className="retro-divider" />
 				<br />
 
 				<h3 className="clickable">nitinshivhare.com</h3>
