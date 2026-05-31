@@ -8,6 +8,7 @@
 	justify-content: center;
 	align-content: center;
 }
+
 .outer-box h1 {
 	color: var(--highlight-blue);
 	position: relative;
@@ -28,6 +29,16 @@
 	font-size: 39px;
 	margin-top: auto;
 	margin-bottom: 20px;
+}
+
+.outer-box p {
+	font-family: "Millennium Regular", serif;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 40px;
 }
 
 .third {
