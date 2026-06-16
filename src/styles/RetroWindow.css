@@ -283,3 +283,91 @@
 	padding: 0;
 	overflow: hidden;
 }
+
+/* ===== Retro Animations ===== */
+
+/* Close: error shake → squish down to bottom-left corner */
+@keyframes win98-close {
+	0% {
+		transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1);
+		opacity: 1;
+	}
+	10% {
+		transform: translate(calc(var(--tx, 0px) - 6px), var(--ty, 0px)) scale(1);
+	}
+	20% {
+		transform: translate(calc(var(--tx, 0px) + 6px), var(--ty, 0px)) scale(1);
+	}
+	30% {
+		transform: translate(calc(var(--tx, 0px) - 4px), var(--ty, 0px)) scale(1);
+	}
+	40% {
+		transform: translate(calc(var(--tx, 0px) + 4px), var(--ty, 0px)) scale(1);
+	}
+	50% {
+		transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1);
+		opacity: 1;
+	}
+	/* squish toward bottom-left taskbar corner */
+	75% {
+		transform: translate(
+				calc(var(--tx, 0px) - 60px),
+				calc(var(--ty, 0px) + 60px)
+			)
+			scale(0.4, 0.15);
+		opacity: 0.6;
+	}
+	100% {
+		transform: translate(
+				calc(var(--tx, 0px) - 120px),
+				calc(var(--ty, 0px) + 120px)
+			)
+			scale(0, 0);
+		opacity: 0;
+	}
+}
+
+.window--closing {
+	animation: win98-close 0.4s steps(1, end) forwards;
+	pointer-events: none;
+}
+
+/* Maximize: borders fly outward from center */
+@keyframes win98-maximize {
+	0% {
+		clip-path: inset(45% 45%);
+	}
+	33% {
+		clip-path: inset(30% 20%);
+	}
+	66% {
+		clip-path: inset(10% 5%);
+	}
+	100% {
+		clip-path: inset(0% 0%);
+	}
+}
+
+.window--maximizing {
+	animation: win98-maximize 0.18s steps(3, end) forwards;
+}
+
+/* Restore: borders collapse inward */
+@keyframes win98-restore {
+	0% {
+		clip-path: inset(0% 0%);
+	}
+	33% {
+		clip-path: inset(10% 5%);
+	}
+	66% {
+		clip-path: inset(30% 20%);
+	}
+	100% {
+		clip-path: inset(45% 45%);
+	}
+}
+
+.window--restoring {
+	animation: win98-restore 0.18s steps(3, end) forwards;
+}
